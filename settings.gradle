@@ -1,0 +1,3 @@
+rootProject.name='MoMusic'
+include ':app'
+include ':network'
