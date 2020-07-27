@@ -1,0 +1,42 @@
+ext {
+    android = [compileSdkVersion: 29,
+               buildToolsVersion: "29.0.0",
+               minSdkVersion    : 19,
+               targetSdkVersion : 29,
+               applicationId    : 'com.mogul.music',
+               versionCode      : 1,
+               versionName      : '1.0',
+               multiDexEnabled  : true
+    ]
+    depsVersion = [appcompact    : '1.1.0',
+                   material      : '1.1.0',
+                   recyclerview  : '1.1.0',
+                   constraint    : '1.1.3',
+                   magicIndicator: '1.5.0',
+                   okhttp        : '3.10.0',
+                   glide         : '4.11.0',
+                   glidecompiler : '4.11.0',
+                   rxjava        : '2.2.9',
+                   rxandroid     : '2.1.1',
+                   eventbus      : '3.1.1',
+                   fastjson      : '1.2.70',
+                   gson          : '2.8.6',
+                   greendao      : '3.2.2',
+    ]
+
+    depsLibs = [appcompact    : "androidx.appcompat:appcompat:${depsVersion.appcompact}",
+                material      : "com.google.android.material:material:${depsVersion.material}",
+                recyclerview  : "androidx.recyclerview:recyclerview:${depsVersion.recyclerview}",
+                constraint    : "androidx.constraintlayout:constraintlayout:${depsVersion.constraint}",
+                magicIndicator: "com.github.hackware1993:MagicIndicator:${depsVersion.magicIndicator}",
+                okhttp        : "com.squareup.okhttp3:okhttp:${depsVersion.okhttp}",
+                glide         : "com.github.bumptech.glide:glide:${depsVersion.glide}",
+                glidecompiler : "com.github.bumptech.glide:compiler:${depsVersion.glidecompiler}",
+                rxjava        : "io.reactivex.rxjava2:rxjava:${depsVersion.rxjava}",
+                rxandroid     : "io.reactivex.rxjava2:rxandroid:${depsVersion.rxandroid}",
+                eventbus      : "org.greenrobot:eventbus:${depsVersion.eventbus}",
+                fastjson      : "com.alibaba:fastjson:${depsVersion.fastjson}",
+                gson          : "com.google.code.gson:gson:${depsVersion.gson}",
+                greendao      : "org.greenrobot:greendao:${depsVersion.greendao}",
+    ]
+}
